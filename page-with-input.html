@@ -9,23 +9,23 @@
   <link rel="stylesheet" href="assets/styles/style.css">
   <script src='main.js'></script>
 </head>
-<body style="overflow-x: hidden;">
+<body>
   <header>
     <img src="assets/icons/mgok-logo.png">
   </header>
   <main>
-    <div class="under-header">
+    <div class="logo-with-description">
       <img src="assets/icons/mgok-logo.png">
       <p style="font-size: 10pt;">Портал оформления электронных договоров</p>
     </div>
-    <div class="table-div">
+    <div class="table">
       <p style="font-size: 10pt;">Поиск (введите хотя бы одну букву для начала поиска):</p>
       <input type="text" class="search-field">
       <p style="font-size: 10pt;">Для получения дополнительной информации о кружке наведите на название</p>
       <form>
         <div class="scroll-table">	
             <table>
-              <thead>
+              
                 <tr>
                   <th style="width: 3vw; padding: 10px 5px;">Выбор</th>
                   <th style="width: 3vw; ">Код ЕСЗ</th>
@@ -37,8 +37,7 @@
                   <th style="width: 6vw; padding: 10px 5px;">Стоимость в месяц</th>
                   <th style="width: 6vw; padding: 10px 5px;">ФИО педагога</th>
                 </tr>
-              </thead>
-              <tbody>
+              
                 <tr>
                   <td><input type="radio"></td>
                   <td></td>
@@ -127,14 +126,14 @@
                   <td>3000</td>
                   <td>Козицкая Мария Александровна</td>
                 </tr>
-              </tbody>
+              
             </table>
         </div>
         <p style="font-size: 10pt;">Выберите дату начала занятий:</p>
         <input type="date" class="calendar" style="margin-bottom: 2vh;">
-        <p class = "agreement-checkbox"><input type="checkbox"> Согласие на обработку персональных данных <a href="">посмотреть</a></p>
-        <p class="agreement-checkbox"><input type="checkbox"> Согласие на подписание договора простой электронной подписью <a href="">посмотреть</a></p>
-        <button type="submit" class="submit-button"><a href="data-insert.html">Далее</a></button>
+        <p class = "agreement"><input type="checkbox"> Согласие на обработку персональных данных <a href="">посмотреть</a></p>
+        <p class="agreement"><input type="checkbox"> Согласие на подписание договора простой электронной подписью <a href="">посмотреть</a></p>
+        <button type="submit" class="submit"><a href="data-insert.html">Далее</a></button>
       </form>
     </div>
   </main>
