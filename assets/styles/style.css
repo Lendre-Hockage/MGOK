@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #2d2d2d;
+  }
+  *:focus, *:active {
+    border: none;
+    outline: none;
+  }
+
+  html, body{
+    overflow-x: hidden;
+    position: relative;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+main{
+  flex: 1 1 auto;
+}
+  header{
+    height: 6vh;
+    width: 100vw;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+  }
+  header img{
+    height: 100%;
+    margin-left: 20vw;
+  }
+  .first-page-info-div{
+    height: 94vh;
+    width: 100vw;
+    background-image: url(./../images/first-page-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    text-align: center;
+  }
+
+  .first-page-info-div h1{
+    color: white;
+    width: 45vw;
+    margin: 0 auto;
+    padding-top: 15vh;
+    
+  }
+  .first-page-info-div p{
+    color: white;
+    width: 60vw;
+    margin: 7vh auto;
+    
+    font-size: 11pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .first-page-info-div a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5vh 2vw;
+    margin-top: 10vh;
+    background-color: rgb(255, 0, 0);
+    font-size: 11pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.2s;
+  }
+  .first-page-info-div a:hover{
+    background-color: rgb(255, 36, 36);
+  }
+  .under-header{
+    width: 100vw;
+    height: 15vh;
+    text-align: center;
+    
+  }
+  .under-header img{
+    height: 6vh;
+    margin: 2vh auto;
+  }
+  .table-div{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+  }
+  
+  .search-field{
+    padding: 1vh;
+    border: 1px solid rgb(202, 202, 202);
+    height: 5vh;
+    font-size: 12pt;
+    margin-bottom: 3vh;
+    
+  }
+  .scroll-table{
+  height: 40vh;
+	overflow-x: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eee;
+  }
+  .scroll-table table {
+    width:100%;
+    table-layout: fixed;
+    border: none;
+    
+  }
+  .scroll-table th{
+    font-weight: bold;
+  	text-align: left;
+  	border: none;
+	  
+	  font-size: 14px;
+    border-top: 1px solid rgb(202, 202, 202);
+	  border-bottom: 1px solid rgb(202, 202, 202);
+    
+  }
+  .scroll-table tr td{
+    height: 10vh;
+    font-size: 10pt;
+    padding-left: 10px;
+  }
+  .scroll-table tr:nth-child(even){
+    background: #f3f3f3;
+  }
+  .calendar{
+    height: 3vh;
+    border: 1px solid rgb(202, 202, 202);
+  }
+  .agreement-checkbox{
+    font-weight: bold; 
+    font-size: 10pt;
+    margin-bottom: 2vh;
+  }
+  .agreement-checkbox a{
+    color: rgb(29, 173, 230);
+  }
+  .submit-button{
+    background-color: rgb(20, 161, 20);
+    color: white;
+    width: 7vw;
+    height: 4vh;
+    border-radius: 3px;
+    transition: 0.2s;
+  }
+  .submit-button a{
+    text-decoration: none;
+    color: white;
+  }
+  .submit-button:hover{
+    background-color: rgb(0, 220, 0);
+  }
+  .back{
+    background-color: rgb(0, 108, 209);
+    color: white;
+    width: 7vw;
+    height: 4vh;
+    border-radius: 3px;
+    transition: 0.2s;
+  }
+  .back a{
+    text-decoration: none;
+    color: white;
+  }
+  .back:hover{
+    background-color: rgb(0, 132, 255);
+  }
+  .footer{
+    position: relative;
+    border-top: 1px solid rgb(202, 202, 202);
+    margin: 2vh 0;
+    text-align: left;
+    color: white;
+  }
+  .footer p{
+    font-size: 10pt;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .owner-info .p{
+    font-size: 10pt;
+    margin-bottom: 1vh;
+  }
+  .owner-info .text-field{
+    border: 1px solid rgb(202, 202, 202);
+    width: 95%;
+    height: 4vh;
+    padding: 0.5vh;
+    margin-bottom: 3vh;
+  }
+  .owner-header{
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+  .benefits-div{
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .benefits-header{
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 3vh;
+  }
+  .benefits-div .p{
+    margin-bottom: 2vh;
+    font-size: 10pt;
+  }
+  
+  .benefits-div select{
+    border: 1px solid rgb(202, 202, 202);
+    width: 100%;
+    height: 5vh;
+    padding: 0.5vh;
+    margin-bottom: 3vh;
+  }
+  .data-check-div{
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .data-check-header{
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 3vh;
+  }
+  .download-example-button{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(253, 163, 29);
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+  .download-example-button:hover{
+    background-color: rgb(255, 184, 78);;
+  }
+  .data-check-div .p{
+    font-size: 10pt;
+    margin-bottom: 1vh;
+  }
+  .contract-div{
+    width: 80vw;
+    margin: 0 auto;
+
+  }
+  .contract{
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 3vh;
+  }
+  .contract-div .p{
+    font-size: 10pt;
+    margin-bottom: 3vh;
+  }
+  .check-field{
+    width: 100%;
+    border: 1px solid rgb(202, 202, 202);
+    height: 5vh;
+    padding: 0.5vh;
+    margin-bottom: 3vh;
+    }
+    .final-div{
+      width: 80vw;
+      margin: 0 auto;
+    }
+    .final-div .p{
+      font-size: 10pt;
+      margin-top: 3vh;
+    }
+    .download-contract-button{
+      text-decoration: none;
+    color: white;
+    background-color: rgb(253, 163, 29);
+    padding: 1vh 1vw;
+    border-radius: 3px;
+    transition: 0.2s;
+    }
+    .download-contract-button:hover{
+      background-color: rgb(255, 184, 78);
+    }
+
+    .its-done{
+      font-size: 16pt;
+      font-weight: bold;
+      margin-bottom: 5vh;
+    }
